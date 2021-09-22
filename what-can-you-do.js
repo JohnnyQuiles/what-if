@@ -1,15 +1,15 @@
 const prompt = require('prompt-sync')();
 
-const number = Number(prompt("Enter a number: "));
+const age= Number(prompt('Enter your age: '));
 
-if (num < 16) {
-    console.log("You can't drive:",);
-} else if (num > 16) {
+if (age < 16) {
+    console.log("You can't drive. " );
+} else if (age >= 16 && age <=17 ) { 
     console.log("You can drive but not vote:",);
 }
-else if (num < 24) {
+else if (age <= 18 && age <=24) {
     console.log("You can vote but not rent a car:",);
 }
-else if (num > 25) {
+else {
     console.log("You can do pretty much anything:",);
 }
